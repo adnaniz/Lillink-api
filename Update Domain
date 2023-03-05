@@ -1,0 +1,7 @@
+curl --location --request PUT 'https://lillink.xyz/api/domain/:id/update' \
+--header 'Authorization: Bearer YOURAPIKEY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "redirectroot": "https:\/\/rootdomain-new.com",
+    "redirect404": "https:\/\/rootdomain-new.com\/404"
+}'
