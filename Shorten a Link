@@ -1,0 +1,53 @@
+curl --location --request POST 'https://lillink.xyz/api/url/add' \
+--header 'Authorization: Bearer YOURAPIKEY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "url": "https:\/\/google.com",
+    "custom": "google",
+    "password": "mypass",
+    "expiry": "2020-11-11 12:00:00",
+    "type": "splash",
+    "metatitle": "Not Google",
+    "metadescription": "Not Google description",
+    "metaimage": "https:\/\/www.mozilla.org\/media\/protocol\/img\/logos\/firefox\/browser\/og.4ad05d4125a5.png",
+    "geotarget": [
+        {
+            "location": "Canada",
+            "link": "https:\/\/google.ca"
+        },
+        {
+            "location": "United States",
+            "link": "https:\/\/google.us"
+        }
+    ],
+    "devicetarget": [
+        {
+            "device": "iPhone",
+            "link": "https:\/\/google.com"
+        },
+        {
+            "device": "Android",
+            "link": "https:\/\/google.com"
+        }
+    ],
+    "languagetarget": [
+        {
+            "language": "en",
+            "link": "https:\/\/google.com"
+        },
+        {
+            "language": "fr",
+            "link": "https:\/\/google.ca"
+        }
+    ],
+    "parameters": [
+        {
+            "name": "aff",
+            "value": "3"
+        },
+        {
+            "device": "gtm_source",
+            "link": "api"
+        }
+    ]
+}'
