@@ -1,0 +1,8 @@
+curl --location --request POST 'https://lillink.xyz/api/domain/add' \
+--header 'Authorization: Bearer YOURAPIKEY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "domain": "https:\/\/domain1.com",
+    "redirectroot": "https:\/\/rootdomain.com",
+    "redirect404": "https:\/\/rootdomain.com\/404"
+}'
