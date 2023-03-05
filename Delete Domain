@@ -1,0 +1,3 @@
+curl --location --request DELETE 'https://lillink.xyz/api/domain/:id/delete' \
+--header 'Authorization: Bearer YOURAPIKEY' \
+--header 'Content-Type: application/json' \
