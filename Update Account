@@ -1,0 +1,7 @@
+curl --location --request PUT 'https://lillink.xyz/api/account/update' \
+--header 'Authorization: Bearer YOURAPIKEY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "newemail@google.com",
+    "password": "newpassword"
+}'
